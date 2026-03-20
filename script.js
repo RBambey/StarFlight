@@ -123,9 +123,11 @@ function update(dt) {
     var fwdY =  fy;
     var fwdZ = -fx * sy + fz * cy;
 
-    camX += fwdX * fly_speed * dt;
-    camY += fwdY * fly_speed * dt;
-    camZ += fwdZ * fly_speed * dt;
+    // Always maintain a minimum crawl so the scene stays alive at speed=0
+    var speed = Math.max(1.5, fly_speed);
+    camX += fwdX * speed * dt;
+    camY += fwdY * speed * dt;
+    camZ += fwdZ * speed * dt;
 
     setUniform("cam_x",     camX);
     setUniform("cam_y",     camY);
