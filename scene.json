@@ -1,0 +1,73 @@
+{
+	"CONTROLS" :
+	[
+		{
+			"TYPE" : "bang",
+			"NAME" : "barrel_roll",
+			"DESCRIPTION" : "Trigger a complete barrel roll.",
+			"UI_GROUP" : "ungrouped"
+		},
+		{
+			"TYPE" : "bang",
+			"NAME" : "recenter",
+			"DESCRIPTION" : "Smoothly return to level flight.",
+			"UI_GROUP" : "ungrouped"
+		},
+		{
+			"DEFAULT" : 15,
+			"DESCRIPTION" : "Forward flight speed in units per second.",
+			"MAX" : 50,
+			"MIN" : 0,
+			"NAME" : "fly_speed",
+			"TYPE" : "slider",
+			"UI_GROUP" : "ungrouped"
+		},
+		{
+			"DEFAULT" :
+			[
+				0,
+				0
+			],
+			"DESCRIPTION" : "X = roll rate, Y = pitch.",
+			"MAX" :
+			[
+				0.2,
+				1
+			],
+			"MIN" :
+			[
+				-0.2,
+				-1
+			],
+			"NAME" : "pitch_roll",
+			"PARAMS" : 0.08,
+			"TYPE" : "xy smooth",
+			"UI_GROUP" : "ungrouped"
+		},
+		{
+			"DEFAULT" : 0.6,
+			"DESCRIPTION" : "Density of stars filling the sky.",
+			"MAX" : 1,
+			"MIN" : 0,
+			"NAME" : "star_count",
+			"TYPE" : "slider",
+			"UI_GROUP" : "ungrouped"
+		},
+		{
+			"DEFAULT" : 0.5,
+			"DESCRIPTION" : "Amount of nebula clouds filling space.",
+			"MAX" : 1,
+			"MIN" : 0,
+			"NAME" : "nebula_amount",
+			"TYPE" : "slider",
+			"UI_GROUP" : "ungrouped"
+		}
+	],
+	"CREDIT" : "RBambey",
+	"DESCRIPTION" : "Fly through a star field with drifting nebulae. Bass pulses stars outward from your view.",
+	"GPU" : 0,
+	"HEIGHT" : 1080,
+	"IMAGE_PATH" : "thumbnail.png",
+	"TITLE" : "Star Flight",
+	"WIDTH" : 1920
+}
