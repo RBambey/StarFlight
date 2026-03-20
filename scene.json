@@ -22,7 +22,7 @@
 		{
 			"DEFAULT" : 15,
 			"DESCRIPTION" : "Forward flight speed in units per second.",
-			"MAX" : 50,
+			"MAX" : 300,
 			"MIN" : 0,
 			"NAME" : "fly_speed",
 			"TYPE" : "slider",
@@ -58,19 +58,10 @@
 			"NAME" : "star_count",
 			"TYPE" : "slider",
 			"UI_GROUP" : "Stars"
-		},
-		{
-			"DEFAULT" : 0.5,
-			"DESCRIPTION" : "Amount of nebula clouds filling space.",
-			"MAX" : 1,
-			"MIN" : 0,
-			"NAME" : "nebula_amount",
-			"TYPE" : "slider",
-			"UI_GROUP" : "Stars"
 		}
 	],
 	"CREDIT" : "RBambey",
-	"DESCRIPTION" : "Fly through a star field with drifting nebulae. Bass pulses stars outward from your view.",
+	"DESCRIPTION" : "Fly through a star field. Bass pulses stars outward from your view.",
 	"GPU" : 0,
 	"HEIGHT" : 1080,
 	"IMAGE_PATH" : "thumbnail.png",
