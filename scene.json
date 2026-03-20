@@ -1,17 +1,23 @@
 {
-	"CONTROLS" :
+	"CONTROLS" : 
 	[
 		{
-			"TYPE" : "bang",
-			"NAME" : "barrel_roll",
+			"DEFAULT" : 0,
 			"DESCRIPTION" : "Trigger a complete barrel roll.",
-			"UI_GROUP" : "ungrouped"
+			"MAX" : 1,
+			"MIN" : 0,
+			"NAME" : "barrel_roll",
+			"TYPE" : "bang",
+			"UI_GROUP" : "Flight"
 		},
 		{
-			"TYPE" : "bang",
-			"NAME" : "recenter",
+			"DEFAULT" : 0,
 			"DESCRIPTION" : "Smoothly return to level flight.",
-			"UI_GROUP" : "ungrouped"
+			"MAX" : 1,
+			"MIN" : 0,
+			"NAME" : "recenter",
+			"TYPE" : "bang",
+			"UI_GROUP" : "Flight"
 		},
 		{
 			"DEFAULT" : 15,
@@ -20,21 +26,21 @@
 			"MIN" : 0,
 			"NAME" : "fly_speed",
 			"TYPE" : "slider",
-			"UI_GROUP" : "ungrouped"
+			"UI_GROUP" : "Flight"
 		},
 		{
-			"DEFAULT" :
+			"DEFAULT" : 
 			[
 				0,
 				0
 			],
 			"DESCRIPTION" : "X = roll rate, Y = pitch.",
-			"MAX" :
+			"MAX" : 
 			[
 				0.2,
 				1
 			],
-			"MIN" :
+			"MIN" : 
 			[
 				-0.2,
 				-1
@@ -42,7 +48,7 @@
 			"NAME" : "pitch_roll",
 			"PARAMS" : 0.08,
 			"TYPE" : "xy smooth",
-			"UI_GROUP" : "ungrouped"
+			"UI_GROUP" : "Flight"
 		},
 		{
 			"DEFAULT" : 0.6,
@@ -51,7 +57,7 @@
 			"MIN" : 0,
 			"NAME" : "star_count",
 			"TYPE" : "slider",
-			"UI_GROUP" : "ungrouped"
+			"UI_GROUP" : "Stars"
 		},
 		{
 			"DEFAULT" : 0.5,
@@ -60,7 +66,7 @@
 			"MIN" : 0,
 			"NAME" : "nebula_amount",
 			"TYPE" : "slider",
-			"UI_GROUP" : "ungrouped"
+			"UI_GROUP" : "Stars"
 		}
 	],
 	"CREDIT" : "RBambey",
@@ -68,6 +74,13 @@
 	"GPU" : 0,
 	"HEIGHT" : 1080,
 	"IMAGE_PATH" : "thumbnail.png",
+	"MEDIA" : 
+	[
+		{
+			"FILTER" : "linear",
+			"WRAP" : "repeat"
+		}
+	],
 	"TITLE" : "Star Flight",
 	"WIDTH" : 1920
 }
